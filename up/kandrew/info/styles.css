@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212529;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading-container {
+    width: 80%;
+    max-width: 600px;
+    background: #343638;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.heading-container h1 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.status-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.status-indicator {
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+details {
+    margin-top: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    background: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+details[open] summary {
+    background: #d6d6d6;
+}
+
+.details-content {
+    margin-top: 10px;
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.catalog-item {
+    background: var(--background-color, #303030);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px);
+}
+
+.catalog-item h2 {
+    font-size: 18px;
+    color: var(--primary-color, #007bff);
+    margin-bottom: 10px;
+}
+
+.catalog-item p {
+    font-size: 14px;
+    color: var(--text-color, #ffffff);
+    margin-bottom: 10px;
+}
+
+.catalog-item button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--primary-color, #007bff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.catalog-item button:hover {
+    background-color: var(--primary-dark-color, #0056b3);
+}
+
+.catalog-item .article-link {
+    margin-top: 10px;
+    display: none;
+    font-size: 14px;
+    color: var(--primary-color, #007bff);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:site_name" content="Rural Inscribe User Profile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infoblock Kandrew's About Me</title>
+    <meta name="description" content="Main of Kandrew's User Profile">
+    <meta property="og:url" content="https://ruralinscribe.net/up/kandrew/info/">
+    <meta property="og:image" content="https://ruralinscribe.net/hq-ri.net.png">
+    <meta property="og:type" content="website">
+    <link id="theme-stylesheet" rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="heading-container">
+        <h1>Kandrew</h1>
+        <div class="catalog-container">
+            <div class="catalog-item">
+                <h2>Link 1</h2>
+                <b>
+                    <p>Kandrew's User Profile</p>
+                </b>
+                <p>To learn more, check out the link.</p>
+                <button onclick="toggleLink(this)">Show Link</button>
+                <a href="/up/kandrew/" class="article-link" target="_blank">Visit: Kandrew's User Profile.</a>
+            </div>
+
+            <div class="catalog-item">
+                <h2>Link 2</h2>
+                <b>
+                    <p>Kandrew's Status (Archive)</p>
+                </b>
+                <p>To learn more, check out the link.</p>
+                <button onclick="toggleLink(this)">Show Link</button>
+                <a href="/up/kandrew/status/" class="article-link" target="_blank">Visit: Kandrew's Status.</a>
+            </div>
+
+            <div class="catalog-item">
+                <s>
+                    <h2>Link 3</h2>
+                </s>
+                <s><b>
+                        <p>Empty</p>
+                    </b></s>
+                <p>Date unconfirmed; might be coming sooner than you think.</p>
+                <button onclick="toggleLink(this)">Show Link</button>
+                <a href="#" class="article-link"><s>Visit: Google Doc.</s></a>
+            </div>
+            <br>
+            <p>Email: <a href="mailto:kandrew@ruralinscribe.net">kandrew@ruralinscribe.net</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleLink(button) {
+            const link = button.nextElementSibling;
+            if (link.style.display === "none" || link.style.display === "") {
+                link.style.display = "block";
+                button.textContent = "Hide Link";
+            } else {
+                link.style.display = "none";
+                button.textContent = "Show Link";
+            }
+        }
+    </script>
+</body>
+
+</html>
